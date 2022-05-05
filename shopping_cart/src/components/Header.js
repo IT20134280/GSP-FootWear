@@ -1,18 +1,20 @@
 import { Navbar, Container, Dropdown, Badge, Nav } from "react-bootstrap";
- 
+import { HiShoppingCart } from "react-icons/hi";
+import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
       <Navbar bg="dark" color="inherit"  style={{height:75}} >
           <Container>
-            <h1> Shopping Cart</h1>
+            <Link to="/"> Shopping Cart</Link>
             <Nav>
               <Dropdown alignRight>
                 <Dropdown.Toggle>
-                <Badge>{8}</Badge>
+                  <HiShoppingCart color="white" fontsize="24px"/> 
+                <Badge>My Cart</Badge>
                 </Dropdown.Toggle>
-                <Dropdown.Menu  >
-                  <span>Shopping Cart is Empty!</span>
+                <Dropdown.Menu style={{width:100}} >
+                  <span >Shopping Cart Empty!</span>
                 </Dropdown.Menu>
               </Dropdown>
             </Nav>
