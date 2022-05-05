@@ -6,7 +6,9 @@ const Header = () => {
     return (
       <Navbar bg="dark" color="inherit"  style={{height:75}} >
           <Container>
+            <Navbar.Brand>
             <Link to="/"> Shopping Cart</Link>
+            </Navbar.Brand>
             <Nav>
               <Dropdown alignRight>
                 <Dropdown.Toggle>

@@ -6,7 +6,7 @@ import Home from "./components/Home";
 
 function App() {
   return (
-    <BrowserRouter >
+    <BrowserRouter>
       <Header/>
       <div>
         <Route path="/" exact>
