@@ -1,5 +1,5 @@
 import { Navbar, Container, Dropdown, Badge, Nav } from "react-bootstrap";
-import DropdownMenu from "react-bootstrap/esm/DropdownMenu";
+ 
 
 const Header = () => {
     return (
@@ -8,10 +8,12 @@ const Header = () => {
             <h1> Shopping Cart</h1>
             <Nav>
               <Dropdown alignRight>
+                <Dropdown.Toggle>
                 <Badge>{8}</Badge>
-                <DropdownMenu>
-                  <span>Empty!</span>
-                </DropdownMenu>
+                </Dropdown.Toggle>
+                <Dropdown.Menu  >
+                  <span>Shopping Cart is Empty!</span>
+                </Dropdown.Menu>
               </Dropdown>
             </Nav>
           </Container>
