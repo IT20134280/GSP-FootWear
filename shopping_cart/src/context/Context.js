@@ -1,4 +1,4 @@
-import { myContext, useReducer } from "react";
+import { myContext, useReducer, useContext  } from "react";
 import { faker } from '@faker-js/faker';
 import { cartReducer } from "./Reducer";
 
@@ -23,6 +23,6 @@ const products = [...Array(15)].map(() => ({
 
 export default Context;
 
-export const cartState = () => {
+export const CartState = () => {
     return useContext(Cart);
 }
