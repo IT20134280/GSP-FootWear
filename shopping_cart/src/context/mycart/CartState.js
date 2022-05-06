@@ -5,7 +5,7 @@ import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM  } from "../Types";
 
 const CartState = ({children}) => {
     const initialState ={
-        showCart: falis,
+        showCart: false,
         cartItem: [],
     };
     const [state, dispatch] = useReducer(CartReducer, initialState);
