@@ -3,7 +3,7 @@ import CartContext from "./CartContext";
 import CartReducer from "./CartReducer";
 import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM  } from "../Types";
 
-const CartState = ({children}) => {
+const CartState = (props) => {
     const initialState ={
         showCart: false,
         cartItem: [],
@@ -25,7 +25,9 @@ const CartState = ({children}) => {
       addToCart,
       showHideCart,
       removeItem,
-  }}></CartContext.Provider>;
+  }}>
+      {props.children}
+  </CartContext.Provider>;
 };
 
-export default CartState;
+export  default CartState;
