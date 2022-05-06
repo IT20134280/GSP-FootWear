@@ -8,10 +8,9 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <CartState>
-    <App />
+      <App />
     </CartState>
-     
   </React.StrictMode>
 );
 
- 
+
