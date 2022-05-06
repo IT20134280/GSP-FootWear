@@ -2,27 +2,19 @@
 
  
  
-import data from "../context/data";
+import products from "../context/data";
 import "./styles.css";
+import ProductCard from "./ProductCard";
 
 const Home = () => {
   return(
     <div>
-      {data.map((data) =>(
-        data.name
+      {products.map((product) =>(
+        <ProductCard key={product.id} product={product} />
       ))}
-    </div>)}
- /// const {
- //   state: {products},
- // }=CartState();
-//  console.log(products);
- // return ( 
- //   <div classsName="product">
-  //    {products.map((prod) => {
-  //      return <ProductList prod={prod} key={prod.id} />;
-  //    })}
-  //  </div>
- // );
-//}
+    </div>
+    );
+  };
+ 
 
 export default Home;
