@@ -8,7 +8,7 @@ import ProductCard from "./ProductCard";
 
 const Home = () => {
   return(
-    <div>
+    <div className="product">
       {products.map((product) =>(
         <ProductCard key={product.id} product={product} />
       ))}

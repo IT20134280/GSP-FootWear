@@ -1,4 +1,4 @@
-import data from "../context/data";
+ 
  
  
 
@@ -11,6 +11,9 @@ const ProductCard = ({product}) => {
              <div>
                  <h4>{product.price}</h4>
              </div>
+             <button>
+                 Add to Cart
+             </button>
          </div>
      </div>
   )
