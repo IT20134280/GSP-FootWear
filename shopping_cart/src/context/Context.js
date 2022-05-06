@@ -11,6 +11,7 @@ const products = [...Array(15)].map(() => ({
     name: faker.commerce.productName(),
     price: faker.commerce.price(),
     image: faker.random.image(),
+    instock: faker.random.arrayElement([0,3,5,6]),
 }));
 
     const [state, dispatch] = useReducer(cartReducer, {
