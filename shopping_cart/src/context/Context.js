@@ -1,5 +1,5 @@
 import { myContext } from "react";
-import faker from "faker";
+import { faker } from '@faker-js/faker';
 
 const Cart = myContext();
 
@@ -10,8 +10,13 @@ const products = [...Array(15)].map(() => ({
     name: faker.commerce.productName(),
     price: faker.commerce.price(),
     image: faker.random.image(),
-}))
+}));
 
+    const [state, dispatch] = useReducer(cartReducer, {
+        products:product,
+        cart:[]});
+
+   
  return <Cart.Provider>{child}</Cart.Provider>;
 };
 
