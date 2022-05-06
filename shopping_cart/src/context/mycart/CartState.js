@@ -6,7 +6,7 @@ import { SHOW_HIDE_CART, ADD_TO_CART, REMOVE_ITEM  } from "../Types";
 const CartState = (props) => {
     const initialState ={
         showCart: false,
-        cartItem: [],
+        cartItems: [],
     };
     const [state, dispatch] = useReducer(CartReducer, initialState);
 
@@ -21,7 +21,7 @@ const CartState = (props) => {
     };
   return <CartContext.Provider value={{
       showCart: state.showCart,
-      cartItem: state.cartItem,
+      cartItems: state.cartItems,
       addToCart,
       showHideCart,
       removeItem,
