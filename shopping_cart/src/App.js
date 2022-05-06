@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route} from "react-router-dom";
+import { BrowserRouter, Route, Routes} from "react-router-dom";
  
 import Header from "./components/Header";
 import Cart from "./components/Cart";
@@ -11,12 +11,10 @@ function App() {
     <BrowserRouter>
       <Header />
       <div>
-        
-           <Route path="/">
-             <h1>Hello</h1>
-           </Route>
-        
-       
+        <Routes>
+           <Route path="/" element={<Home />}/>
+           <Route path="/c" element={<Cart />}/>
+           </Routes>
       </div>
     </BrowserRouter>
   );
